@@ -1,7 +1,8 @@
 let heading 
 let bananaImg
+let button
+let greeting
 function setup(){
-    createCanvas(windowWidth, windowHeight)
     createCanvas(windowWidth, windowHeight)
     button = createButton('Click for game');
     button.position(width / 2, height / 2)
@@ -15,7 +16,6 @@ function setup(){
     heading =  createElement('h2', 'Click The Banana!')
     heading.position(width / 3, height / 4)
 }
-let button
-let greeting
-function setup() {
+function draw(){
+    bananaImg.position(random(width), random(height))
 }
