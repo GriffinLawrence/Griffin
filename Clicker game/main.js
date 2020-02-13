@@ -11,3 +11,17 @@ function draw() {
 function goToLink() {
   window.location.href = 'https://www.youtube.com/watch?v=a5NHUtOtjS0'; // Same tab
 }
+
+
+let links = [
+    url,
+    url,
+    url,
+]
+
+let randomLink = link[random(link.length)]
+
+
+function goToLink() {
+    window.location.href = randomLink; // Same tab
+  }
