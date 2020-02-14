@@ -14,8 +14,8 @@ function goToLink() {
 
 
 let links = [
-    url,
-    url,
+    url,https://zoomquilt2.com/
+    url,http://www.hardcoreprawnlawn.com/
     url,
 ]
 
