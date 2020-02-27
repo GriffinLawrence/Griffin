@@ -14,9 +14,9 @@ function goToLink() {
 
 
 let links = [
-    url,https://zoomquilt2.com/
-    url,http://www.hardcoreprawnlawn.com/
-    url,
+    url,https //zoomquilt2.com/
+    ,url,http //www.hardcoreprawnlawn.com/
+    ,url,
 ]
 
 let randomLink = link[random(link.length)]
