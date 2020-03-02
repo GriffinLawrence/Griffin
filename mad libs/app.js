@@ -7,15 +7,31 @@ function setup() {
 
   addInputOutputElements()
 
-  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where tyrannical gnomes rule.")
-
+  addTopic(
+    'Door',
+    'creature one creature two creature three creature four the creatures have lined up at your',
+    ' hands up its the cops'
+  )
+  addTopic(
+    'place',
+    'ten men walked into a bar located in ',
+    ' five men walked out ',
+  )
+  addTopic(
+    'Bar name',
+    'you were the only witness of the scene that happened in',
+    ' tell us all you know or youll be locked up in prison ',
+  )
+  s = string.toUpperCase()
+  s = string.toUpperCase()
   // Creates next button and styles it
   let outputDisplayBtn = createButton('NEXT')
   outputDisplayBtn.mousePressed(showOutputHandler)
+  .parent(inputDivUI)
 
   function showOutputHandler() {
     outputDivUI.show()
-
+    inputDivUI.hide()
   }
 }
 
@@ -29,9 +45,13 @@ function addInputOutputElements() {
 }
 
 function addTopic(topic, intro, detail) {
-  createElement('p', 'Name a ' + topic.toUpperCase()).id('input-label').parent(inputDivUI)
+  createElement('p', `Name a ${topic.toUpperCase()}`)
+    .id('input-label')
+    .parent(inputDivUI)
 
-  let inputFieldUI = createInput(' ').id('input-field').parent(inputDivUI)
+  let inputFieldUI = createInput(' ')
+    .id('input-field')
+    .parent(inputDivUI)
 
   inputFieldUI.changed(updateOutputHandler)
 

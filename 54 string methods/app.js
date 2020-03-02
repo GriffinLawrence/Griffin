@@ -27,6 +27,10 @@ s = string.slice(3, 8)
 
 s = string.trim()
 
+s = string + "is great" + num + "years /n old"
+
+s = 
+
 
 console.log(s)
 
