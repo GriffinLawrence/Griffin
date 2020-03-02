@@ -1,5 +1,5 @@
    let button;
-   let greeting
+   let greeting;
     function setup() {
       createCanvas(windowWidth, windowHeight);
     greeting = createElement('h2', 'Catch the banana or else you will lose')
@@ -8,12 +8,8 @@
     textSize(20)
       button = createButton('Go To game and definitely not an ad');
       button.position(width / 2.3, height / 2)
-      button.mousePressed(goToLink)
+      button.mousePressed(startGame)
     } 
-    function goToLink() {
-        window.location.href = links; // Same tab
-      }
-      let links = [
-        url,https /zoomquilt2.com/
-        url,http /127.0.0.1:5500/53%20clicker%20Game%20v2/game.html
-    ]
+function startGame() {
+  window.location.href = "game.html"
+}

@@ -22,6 +22,7 @@ function setup() {
 
   // Creates Difficulty Slider
   const difficultyLabel = createElement('h4', 'DIFFICULTY')
+  difficultyLabel.position(width / 20, height / 10)
 
 }
 
