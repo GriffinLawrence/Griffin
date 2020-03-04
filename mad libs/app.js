@@ -22,8 +22,16 @@ function setup() {
     'you were the only witness of the scene that happened in',
     ' tell us all you know or youll be locked up in prison ',
   )
-  s = string.toUpperCase()
-  s = string.toUpperCase()
+  addTopic(
+    'Last Name',
+    'Listen',
+    ' We know your game and we can grill you all night long'
+  )
+  addTopic(
+    'Weapon onomatopoeia',
+    'Italian voice: well too bad coppers you wont see sunrise',
+    ' Lets get out of here now boss they will be hot on our tale'
+  )
   // Creates next button and styles it
   let outputDisplayBtn = createButton('NEXT')
   outputDisplayBtn.mousePressed(showOutputHandler)
@@ -59,5 +67,9 @@ function addTopic(topic, intro, detail) {
 
   function updateOutputHandler() {
     output.html(intro + inputFieldUI.value() + detail)
+    if(num === true){
+      userInput = Number(userInput)
+      userInput = userInput+30
+    }
   }
 }
